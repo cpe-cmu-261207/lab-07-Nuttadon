@@ -9,7 +9,7 @@ import {
 export default function Todo(props) {
   const [isMouseOver, setIsMouseOver] = useState(false);
   return (
-    <div
+    <li
       onMouseOver={() => {
         setIsMouseOver(true);
       }}
@@ -61,6 +61,6 @@ export default function Todo(props) {
           </button>
         </>
       )}
-    </div>
+    </li>
   );
 }

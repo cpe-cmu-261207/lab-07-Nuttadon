@@ -15,6 +15,7 @@ export default function Home() {
   const onEnter = () => {
     if (todoInput.trim() === "") {
       alert("Todo cannot be empty");
+      setTodoInput("");
       return;
     }
     const newTodos = [{ title: todoInput, completed: false }, ...todos];
