@@ -35,7 +35,7 @@ export default function Home() {
   useEffect(() => {
     if (isFirstRender) {
       setIsFirstRender(false);
-      return; // ไม่งั้นมันจะไปดึงจากค่าที่ใส่ไว้ตอนต้นมา load
+      return;
     }
     saveTodo();
   }, [todos]);
