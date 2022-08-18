@@ -10,7 +10,6 @@ import {
 export default function Home() {
   const [todoInput, setTodoInput] = useState("");
   const [todos, setTodos] = useState([]);
-  const [summary, setSummary] = useState([0, 1, 0]);
 
   const onEnter = () => {
     if (todoInput.trim() === "") {
